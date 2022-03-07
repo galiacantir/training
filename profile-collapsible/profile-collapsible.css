@@ -1,0 +1,183 @@
+body{
+    background-color: #AAA;
+}
+
+/* --- Profile details --- */
+
+.profile{
+    background-color: #777;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2% auto;
+    
+    width: 90%;
+    max-width: 700px;
+
+    /*hw:1 choose a min-width*/
+    min-width: 300px;
+}
+
+.profile img{
+    width: 200px;
+}
+
+.profile h2{
+    color: blanchedalmond;
+    text-transform: uppercase;
+}
+
+.profile ol{
+    text-align: left;
+}
+
+.profile>ol{
+    list-style: none;
+}
+
+.profile a{
+    color: #111;
+    text-decoration: none;
+}
+
+.profile p{
+    margin: 0;
+}
+
+/* --- Biography --- */
+
+#bio{
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    color: whitesmoke;
+}
+  
+#bio:target{
+    /*display:block;*/
+    height: 90px;
+}
+
+/* --- Interests --- */
+
+#interests{
+    /* display: none; */
+    color: whitesmoke;
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#interests:target{
+    /* display: block; */
+    height: 60px;
+}
+
+/* --- Experience - table --- */
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: separate;  
+}
+
+table {
+    width: 405px;
+    background-color: whitesmoke;
+    color:#223;
+}
+
+table tr:first-child{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+th, td {
+    padding: 10px;
+}
+
+#experience{
+    display: none;
+    /* height: 0; 
+    transition: 0.5s;
+    overflow: hidden;*/
+}
+
+#experience:target{
+    display: block;
+    /* height: 172px; */
+}
+
+/* --- Abilities --- */
+
+.abilities img{
+    margin: 0 5px;
+}
+
+#skills{
+    /* display: none; */
+    transition: 0.5s;
+    overflow: hidden;
+    height: 0;
+}
+
+#skills:target{
+    /* display: block; */
+    height: 140px;
+}
+
+/* --- Contact form --- */
+
+.contact-form label{
+    display: block;
+    color: #222;
+}
+
+.contact-form input {
+    margin: 5px 0px 10px 0;
+    padding: 5px 5px;
+    outline: none;
+    width: 200px;
+}
+
+.contact-form select{
+    margin:5px 0px 10px 0;
+    padding: 5px 5px;
+}
+
+.contact-form textarea{
+    width: 200px;
+    height: 100px;
+    margin: 5px 0px 10px 0;
+    padding: 5px 5px;
+    outline: none;
+}
+.contact-form button{
+    display: block;
+    margin: 5px 0px 10px 0;
+    color:whitesmoke;
+    background-color: rgb(34, 34, 34);
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+#contact{
+    /* display: none; */
+    transition: 0.7s;
+    overflow: hidden;
+    height: 0;
+}
+
+#contact:target{
+    /* display: block; */
+    height: 380px;
+}
+
+
+
+
+
+ 
+

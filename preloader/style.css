@@ -1,0 +1,82 @@
+body{
+    background-color:#333;
+    background-image: url(bg.png);
+}
+.ext{
+    border: 5px solid #191919;
+    width: 304px;
+    height: 304px;
+    border-radius: 100%;
+    margin: 100px auto;
+}
+
+.big{
+    border: 2px solid cyan;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    
+    /* bind the animation */
+
+    animation: rot 4s linear infinite;
+}
+
+.int{
+    border: 5px solid #191919;
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+    
+}
+
+
+
+.small{
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    border-radius: 100%;
+    margin: -25px auto;
+    border: 2px solid #222;
+}
+
+/* DEFINE ANIMATION*/
+@keyframes rot{
+    /* animation frames */
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ------ HW ------- */
+
+.hw-preloader{
+    border: 2px solid cyan;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 58px auto;
+    animation: second-circle 2s linear infinite;
+}
+
+.hw-small-preloader{
+    width: 20px;
+    height: 20px;
+    background-color: #191919;
+    border-radius: 100%;
+    margin: -10px auto;
+}
+
+@keyframes second-circle {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(-360deg);
+    }
+}

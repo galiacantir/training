@@ -1,0 +1,89 @@
+.payment-form{
+    border: 1px solid #555;
+    padding: 20px 10px;
+    font-family: Arial;
+    width: 490px;
+    margin: 50px auto;
+
+
+    background-image: url(card.png);
+    background-repeat: no-repeat;
+    background-position: 130px 80px;
+    background-size: 250px;
+    border-radius: 5px;
+    
+}
+
+.payment-form h2{
+    margin-bottom: 120px;
+}
+
+.payment-form label{
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.payment-form label:nth-child(2),
+.payment-form label:nth-child(3){
+    display: block;
+}
+
+.payment-form input{
+    border: 1px solid #AAA;
+    outline: none;
+    
+}
+
+.payment-form input:focus{
+    border-color:rgb(16, 16, 71);
+}
+
+.payment-form input:valid{
+    border-color: green;
+}
+
+.payment-form input:invalid{
+    border-color: red;
+}
+
+.payment-form input:hover{
+    border-color: rgb(71, 71, 216);
+}
+
+.payment-form p{
+    color: rgba(255, 0, 0, 0.603);
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 5px;
+    display: none;
+}
+
+.payment-form input:invalid+p{
+    display: block;
+}
+
+.payment-form input,
+.payment-form button {
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.payment-form label:nth-child(5) {
+    float: right;
+}
+
+.payment-form button{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: rgb(23, 23, 104);
+    color: whitesmoke;
+}
+
+.payment-form button:hover{
+    background-color: rgb(16, 16, 71);
+    cursor: pointer;
+    
+}
+

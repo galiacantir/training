@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="paypal.com" class="payment-form">
+        <h2>Payment details</h2>
+
+        <label>
+            <!-- regular expression 
+                HW1:owner name: 2 words with space (only letters)
+                expires: MM/YY 
+                code:   exactly 3 digits -->
+            <input 
+                type="text" 
+                size="30" 
+                placeholder="card number"
+                pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+                required
+                >
+            <p>the card number should formated like: xxxx-xxxx-xxxx-xxxx</p>
+        </label>
+        <label>
+            <input 
+                type="text" 
+                size="30" 
+                placeholder="owner name"
+                pattern="^([A-Z][a-z]+)\s([A-Z][a-zA-Z-]+)$"
+                required>
+            <p>the name: 2 words with space (only letters). Ex: John Doe</p>
+        </label>
+        <label>
+            <input 
+                type="text" 
+                size="5" 
+                placeholder="expires"
+                pattern="((0[1-9])|(1[02]))/\d{2}"
+                required
+                >
+            <p>the format of expires date: MM/YY</p>
+        </label>
+        <label>
+            <input 
+                type="text" 
+                size="3" 
+                placeholder="code"
+                pattern="\d{3}"
+                required>
+            <p>only 3 numbers</p>
+        </label>
+
+        <button>Pay Now</button>
+    </form>
+</body>
+</html>

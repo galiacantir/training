@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS | Profile - collapsible</title>
+    <link rel="stylesheet" href="profile-collapsible.css">
+</head>
+<body>
+
+    <div class="profile">
+        <img src="images/avataaars (9).png" alt="John Doe avatar">
+        <h2>John Doe</h2>
+
+        <ol>
+            <!-- Biography -->
+            <li>
+                <h3>
+                    <a href="#bio">Biography</a>
+                </h3>
+
+                <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptate molestias quibusdam totam aspernatur nulla aut fugiat magnam voluptatum nesciunt veritatis. Dignissimos similique, accusamus, ipsam dicta possimus aliquid magnam temporibus impedit blanditiis hic quae quibusdam, recusandae itaque debitis autem quod.</p>
+            </li>
+
+            <!-- Interests -->
+
+            <li>
+                <h3>
+                    <a href="#interests">Interests</a>
+                </h3>
+                <ol id="interests">
+                    <li>Hiking</li>
+                    <li>Swiming</li>
+                    <li>RopeJumping</li>
+                </ol>
+            </li>
+
+            <!-- Experience -->
+
+            <li>
+                <h3>
+                    <a href="#experience">Experience</a>
+                </h3>
+                <!-- hw:2 table, companny, year -->
+                <table id="experience">
+                    <tr>
+                      <th>Company</th>
+                      <th>Job</th>
+                      <th>Period</th>
+                    </tr>
+                    <tr>
+                      <td>Endava</td>
+                      <td>Junior Frontend developer</td>
+                      <td>2 years</td>
+                    </tr>
+                    <tr>
+                      <td>Google</td>
+                      <td>Front end developer</td>
+                      <td>2 years</td>
+                    </tr>
+                    <tr>
+                      <td>Linkedin</td>
+                      <td>Web developer</td>
+                      <td>3 years</td>
+                    </tr>
+                  </table>
+            </li>
+
+            <!-- Abilities -->
+
+            <li>
+                <h3>
+                   <a href="#skills">Abilities</a>
+                </h3>
+
+                <div class="abilities" id="skills">
+                    <img src="https://i.picsum.photos/id/385/300/200.jpg?hmac=HSZJH2h7bSr1ddgi_d8BrvcT19MoG7XHRiF43rsnzfU" alt="">
+                    <img src="https://i.picsum.photos/id/77/300/200.jpg?hmac=HvuyjOP8WURJ3sntwQ8L6X7l83o3t0ThDsd9hCOTBGc" alt="">
+                    <img src="https://i.picsum.photos/id/163/300/200.jpg?hmac=fHGMH6DT42ra3SOzs6JtojmYZ7jECNcq5xn1Ap9OPNA" alt="">
+                </div>
+                <!-- hw:3 -->
+            </li>
+
+            <!-- Contact info -->
+
+            <li>
+                <h3>
+                    <a href="#contact">Contact info</a>
+                </h3>
+                <!-- hw: 4 contact form -->
+                <form action="" class="contact-form" id="contact">
+                    <label for="">First name</label>
+                    <input type="text">
+                    
+                    <label for="">Last name</label>
+                    <input type="text">
+                    
+                    <label for="">Country</label>
+                    <select id="country" name="country">
+                        <option value="moldova">Moldova</option>
+                        <option value="usa">USA</option>
+                        <option value="norvegia">Norvegia</option>
+                    </select>
+
+
+                    <label for="subject">Subject</label>
+                    <textarea></textarea>
+
+                    <button>Send</button>
+                </form>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
